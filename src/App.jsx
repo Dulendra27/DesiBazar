@@ -1,6 +1,6 @@
 
 import './App.css'
-import { useContext } from "react"
+import { useContext, useState} from "react"
 import {Link,Routes,Route } from "react-router"
 import { productsContext} from "./components/Function"
 import Products from './components/Products'
@@ -12,8 +12,11 @@ import Home from './components/Home'
 import Search from './components/Search'
 import Login from './components/Login'
 import CartItems from './components/CartItems'
+import account from './assets/account.png'
+import cart from './assets/cart.png'
 export default function App() {
 const {products}= useContext(productsContext)
+
   return (
     <div className="App">
       <header className="header">
@@ -21,18 +24,19 @@ const {products}= useContext(productsContext)
           <div className='logo-container'>
           <Link to="/Home"><button className="logo">DesiBazar.</button></Link>
           </div>
-          <nav className="nav">
-            <Link to="/Products"><button>Products</button></Link>
+          <div className='navBar'>
+          <nav className="nav" >
+            <Link to="/Products"><button className='products-btn'>Products</button></Link>
             <Link to="/Men"><button>Men</button></Link>
             <Link to="/Women"><button>Women</button></Link>
             <Link to="/Electronic"><button>Electronic</button></Link>
             <Link to="/Jewelery"><button>Jewelery</button></Link>
-          <Link to="/Search"><button>Search</button></Link>
+            <Link to="/Search"><button>Search</button></Link>
+            <Link to="/Login" ><img src={account} className="login-btn"/></Link>
+            <Link to="/CartItems"><img src={cart} className="cart"/></Link>
           </nav>
-          <div className="account-cart">
-            <Link to="/Login" ><button className="account">Login</button></Link>
-            <Link to="/CartItems"><button className="cart"> Cart  </button></Link>
           </div>
+          
         </div>
       </header>
       
