@@ -16,7 +16,10 @@ import account from './assets/account.png'
 import cart from './assets/cart.png'
 export default function App() {
 const {products}= useContext(productsContext)
-
+const [showNavbar, setShowNavbar]= useState(false)
+const toggleNavbar = () => {
+  setShowNavbar(!showNavbar)
+}
   return (
     <div className="App">
       <header className="header">
@@ -24,6 +27,9 @@ const {products}= useContext(productsContext)
           <div className='logo-container'>
           <Link to="/Home"><button className="logo">DesiBazar.</button></Link>
           </div>
+          <button className='responsive-navbar-button' onClick={toggleNavbar}>
+           Menu
+          </button>
           <div className='navBar'>
           <nav className="nav" >
             <Link to="/Products"><button className='products-btn'>Products</button></Link>
@@ -37,6 +43,18 @@ const {products}= useContext(productsContext)
           </nav>
           </div>
           
+         <div className= {`mobile-navbar ${showNavbar ? 'show' : ''}`}>
+          <nav className="nav" >
+            <Link to="/Products"><button className='products-btn'>Products</button></Link>
+            <Link to="/Men"><button>Men</button></Link>
+            <Link to="/Women"><button>Women</button></Link>
+            <Link to="/Electronic"><button>Electronic</button></Link>
+            <Link to="/Jewelery"><button>Jewelery</button></Link>
+            <Link to="/Search"><button>Search</button></Link>
+            <Link to="/Login" ><img src={account} className="login-btn"/></Link>
+            <Link to="/CartItems"><img src={cart} className="cart"/></Link>
+          </nav>
+          </div>
         </div>
       </header>
       
