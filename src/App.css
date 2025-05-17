@@ -28,12 +28,17 @@ body {
   .navBar{
     display: none;
   }
-  .responsive-navbar-button{
+  img.responsive-navbar-button{
+    width: 10%;
    display: block;
+  padding: 0;
   }
+   .responsive-navbar-button{
+    margin-left: 0;
+   }
 .mobile-navbar{
   display: none;
-  width: 100%;
+  width: 5%;
 display: flex;
 flex-direction: column;
 gap: 7px;
@@ -132,9 +137,7 @@ width: 100%;
   width: 100%;
  }
 
- div.login-container{
-  margin-left: 0;
- }
+
 
  .cart-container{
   width: 100%;
@@ -190,11 +193,26 @@ div.productsList-item{
  text-align: center;
  margin-bottom: 30px;
 }
- .nav{
-  width: 100%;
+  .navBar{
+    display: none;
+  }
+  img.responsive-navbar-button{
+    width: 10%;
+   display: block;
+  padding: 0;
+  }
+   .responsive-navbar-button{
+    margin-left: 0;
+   }
+.mobile-navbar{
+  display: none;
+  width: 5%;
 display: flex;
 flex-direction: column;
 gap: 7px;
+}
+.mobile-navbar.show{
+  display: flex;
 }
 
 .account-cart{
@@ -291,9 +309,7 @@ width: 100%;
   
  }
  
- div.login-container{
-  margin-left: 0;
- }
+
  
  img.login-btn{
   margin-left: 25px;
@@ -345,11 +361,27 @@ div.productsList-item{
    text-align: center;
    margin-bottom: 30px;
   }
-   .nav{
-    width: 100%;
-  display: flex;
+    .navBar{
+    display: none;
+  }
+  img.responsive-navbar-button{
+    width: 10%;
+   display: block;
+  padding: 0;
+  }
+   .responsive-navbar-button{
+    margin-left: 0;
+   }
+.mobile-navbar{
+  display: none;
+  width: 5%;
+display: flex;
 flex-direction: column;
- gap: 7px;
+gap: 7px;
+}
+.mobile-navbar.show{
+  display: flex;
+}
   }
   .account-cart{
     width: 100%;
@@ -445,9 +477,7 @@ width: 100%;
   
  }
  
- div.login-container{
-  margin-left: 0;
- }
+
  img.login-btn{
   margin-left: 25px;
 }
@@ -475,7 +505,7 @@ div.productsList-item{
   margin-left: 0;
   margin-right: 0;
 }
-}
+
 
 
   .header {
@@ -509,6 +539,10 @@ div.productsList-item{
   }
  .responsive-navbar-button{
   display: none;
+  width: 14px;
+  height: 10px;
+  margin-left: 0 5px;
+  padding: 0;
  }
  .mobile-navbar{
   display: none;

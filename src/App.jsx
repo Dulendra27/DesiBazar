@@ -14,6 +14,7 @@ import Login from './components/Login'
 import CartItems from './components/CartItems'
 import account from './assets/account.png'
 import cart from './assets/cart.png'
+import menu from './assets/menu.png'
 export default function App() {
 const {products}= useContext(productsContext)
 const [showNavbar, setShowNavbar]= useState(false)
@@ -27,9 +28,8 @@ const toggleNavbar = () => {
           <div className='logo-container'>
           <Link to="/Home"><button className="logo">DesiBazar.</button></Link>
           </div>
-          <button className='responsive-navbar-button' onClick={toggleNavbar}>
-           Menu
-          </button>
+          <img className='responsive-navbar-button' src={menu} onClick={toggleNavbar}/>
+          
           <div className='navBar'>
           <nav className="nav" >
             <Link to="/Products"><button className='products-btn'>Products</button></Link>
