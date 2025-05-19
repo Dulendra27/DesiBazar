@@ -28,8 +28,9 @@ const toggleNavbar = () => {
           <div className='logo-container'>
           <Link to="/Home"><button className="logo">DesiBazar.</button></Link>
           </div>
+        <div className='responsive-navbar-container'>
           <img className='responsive-navbar-button' src={menu} onClick={toggleNavbar}/>
-          
+       </div>
           <div className='navBar'>
           <nav className="nav" >
             <Link to="/Products"><button className='products-btn'>Products</button></Link>
@@ -41,8 +42,7 @@ const toggleNavbar = () => {
             <Link to="/Login" ><img src={account} className="login-btn"/></Link>
             <Link to="/CartItems"><img src={cart} className="cart"/></Link>
           </nav>
-          </div>
-          
+         </div>
          <div className= {`mobile-navbar ${showNavbar ? 'show' : ''}`}>
           <nav className="nav" >
             <Link to="/Products"><button className='products-btn'>Products</button></Link>
@@ -54,7 +54,7 @@ const toggleNavbar = () => {
             <Link to="/Login" ><img src={account} className="login-btn"/></Link>
             <Link to="/CartItems"><img src={cart} className="cart"/></Link>
           </nav>
-          </div>
+         </div>
         </div>
       </header>
       
