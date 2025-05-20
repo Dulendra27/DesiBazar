@@ -44,7 +44,7 @@ const toggleNavbar = () => {
           </nav>
          </div>
          <div className= {`mobile-navbar ${showNavbar ? 'show' : ''}`}>
-          <nav className="nav" >
+          <nav className=" nav" >
             <Link to="/Products"><button className='products-btn'>Products</button></Link>
             <Link to="/Men"><button>Men</button></Link>
             <Link to="/Women"><button>Women</button></Link>

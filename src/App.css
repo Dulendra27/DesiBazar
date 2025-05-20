@@ -33,17 +33,20 @@ body {
     width: 100%;
   }
   img.responsive-navbar-button{
-  margin-left: 10%;
+    width: 7%;
+  margin-left: 0;
    display: block;
   }
 .mobile-navbar{
   display: none;
- display: flex;
-flex-direction: column;
+  width: 100%;
 }
-
+nav.nav{
+  
+  display: flex;
+  flex-direction: column;
+}
 div.mobile-navbar{
-margin-left: 20%;
 margin-top: 10px ;
 }
 .mobile-navbar.show{
@@ -194,7 +197,6 @@ div.productsList-item{
  text-align: center;
  margin-bottom: 30px;
 }
-
 .navBar{
     display: none;
   }
@@ -203,23 +205,27 @@ div.productsList-item{
     width: 100%;
   }
   img.responsive-navbar-button{
-  margin-left: 10%;
+    width: 7%;
+  margin-left: 0;
    display: block;
   }
 .mobile-navbar{
   display: none;
- display: flex;
-flex-direction: column;
+  width: 100%;
 }
-
+nav.nav{
+ 
+  display: flex;
+  flex-direction: column;
+}
 div.mobile-navbar{
-margin-left: 20%;
 margin-top: 10px ;
+
 }
 .mobile-navbar.show{
   display: flex;
 }
-
+ 
 .account-cart{
   width: 100%;
   display: flex;
@@ -369,20 +375,22 @@ div.productsList-item{
   }
   div.responsive-navbar-container{
     display: block;
-    width: 100%;
+  
   }
   img.responsive-navbar-button{
-  margin-left: 10%;
+  margin-left: 5%;
    display: block;
   }
 .mobile-navbar{
   display: none;
- display: flex;
-flex-direction: column;
+  width: 100%;
 }
-
+nav.nav{
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+}
 div.mobile-navbar{
-margin-right: 300px;
 margin-top: 10px ;
 }
 .mobile-navbar.show{
@@ -544,17 +552,13 @@ div.productsList-item{
   }
  .responsive-navbar-container{
   display: none;
-  width: 10%;
  }
  .responsive-navbar-button{
   display: none;
- 
  }
 .mobile-navbar{
   display: none;
-width: 10%;
-margin-left:0 ;
- }
+}
   .nav button {
     margin: 0 1rem;
     color: #4a5568;
@@ -619,6 +623,7 @@ margin-left:0 ;
   .products-container{
     display: flex;
     justify-content: space-between;
+   
    }
 
   .rangeCheck-container{
