@@ -611,7 +611,7 @@ div.productsList-item{
    margin-bottom: 50px;
   }
   .search-input{
-    width: 300px;
+    width: 200px;
     height: 10px;
     padding: 10px;
     font-size: 16px;
@@ -736,7 +736,7 @@ div.productsList-item{
 
  
  .list-item{
-  width: auto;
+  width: 200px;
   height: auto;
   border: 1px solid #ccc;
  border-radius: 5px;
@@ -745,7 +745,7 @@ div.productsList-item{
  text-align: center;
  }
  .productsList-item{
-  width: auto;
+  width: 200px;
   height: auto;
   border: 1px solid #ccc;
  border-radius: 5px;
@@ -839,6 +839,7 @@ margin-bottom: 100px;
  }
  .add-item{
   width: 93%;
+  height: auto;
   display: flex;
   justify-content: space-around;
   height: auto;
@@ -871,6 +872,7 @@ display: flex;
 }
 .login-container {
   width: 250px;
+  height: auto;
   margin: auto;
   margin-top: 50px;
   padding: 20px 20px;
